@@ -1,11 +1,11 @@
-name: SizeUI_for_PlayOver
+name: SizeUI
 main: Minetron26\Size_PlayOver\SizeUI
 version: 0.0.1
 api: 3.1.0
 load: POSTWORLD
 author: Minetron26
-description: Plugin especializado para PlayOver
-website: http://(pronto)
+description: Plugin developed by Minetron26.
+website: http://playover.cf
 commands:
  size:
   description: "SizeUI!"
@@ -13,9 +13,9 @@ commands:
   permission: size.minetron
 permissions:
  size:
-  default: false
+  default: op
   description: "Permiso del Plugin Size for PlayOver"
   children:
    size.minetron:
-    default: false
+    default: op
     description: "Allows the use of /size"
