@@ -13,11 +13,11 @@ use pocketmine\utils\TextFormat as T;
 class SizeUI extends PluginBase implements Listener{
 	
 	public function onEnable(){
-		$this->getLogger()->info("Plugin SizeUI_for_PlayOver of Minetron26 Activado!");
+		$this->getLogger()->info("Plugin SizeUI of Minetron26 Activado!");
 	}
 	
 	public function onDisable(){
-		$this->getLogger()->info("Plugin SizeUI_for_PlayOver Desactivado!");
+		$this->getLogger()->info("Plugin SizeUI Desactivado!");
 	}
 
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
@@ -44,29 +44,29 @@ class SizeUI extends PluginBase implements Listener{
 				switch($result){
 					case "0";
 					         $player->setScale("0.3");
-				             $player->sendMessage(T::WHITE."[".T::AQUA."Play".T::YELLOW."Over".T::WHITE."]".T::GREEN."Size a cambiado a". T::RED ." MINI!");
+				             $player->sendMessage(T::WHITE."[".T::AQUA."Size".T::YELLOW."UI".T::WHITE."]".T::GREEN."Your Size change to". T::RED ." MINI!");
 					break;
 					
 					case "1";
 					         $player->setScale("1.0");
-				             $player->sendMessage(T::WHITE."[".T::AQUA."Play".T::YELLOW."Over".T::WHITE."]".T::GREEN."Size a cambiado a". T::WHITE ." NORMAL!");
+				             $player->sendMessage(T::WHITE."[".T::AQUA."Size".T::YELLOW."UI".T::WHITE."]".T::GREEN.Your Size change to". T::WHITE ." NORMAL!");
 					break;
 					
 					case "2";
 					         $player->setScale("1.70");
-				             $player->sendMessage(T::WHITE."[".T::AQUA."Play".T::YELLOW."Over".T::WHITE."]".T::GREEN."Size a cambiado a". T::YELLOW ." GRANDE!");
+				             $player->sendMessage(T::WHITE."[".T::AQUA."Size".T::YELLOW."UI".T::WHITE."]".T::GREEN."Your Size change to". T::YELLOW ." GRANDE!");
 					break;
 					
 					case "3";
 					         $player->setScale("3.0");
-				             $player->sendMessage(T::WHITE."[".T::AQUA."Play".T::YELLOW."Over".T::WHITE."]".T::GREEN."Size a cambiado a". T::AQUA ." MEGAGRANDE!");
+				             $player->sendMessage(T::WHITE."[".T::AQUA."Size".T::YELLOW."UI".T::WHITE."]".T::GREEN."Your Size change to". T::AQUA ." MEGAGRANDE!");
 					break;
 					}
 					
 			
 			});
-			$form->setTitle("SizeUI");
-			$form->setContent(T::GREEN."Cambia tu Size!:");
+			$form->setTitle(T::AQUA."Size".T::YELLOW."UI");
+			$form->setContent(T::GREEN."Change your Size!:");
 			$form->addButton("Mini");
 			$form->addButton("Normal");
 			$form->addButton("Grande");
