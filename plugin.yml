@@ -14,7 +14,7 @@ commands:
 permissions:
  size:
   default: op
-  description: "Permiso del Plugin Size for PlayOver"
+  description: "Permission for plugin SizeUI by Minetron26"
   children:
    size.minetron:
     default: op
