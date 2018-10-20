@@ -54,12 +54,12 @@ class SizeUI extends PluginBase implements Listener{
 					
 					case "2";
 					         $player->setScale("1.70");
-				             $player->sendMessage(T::WHITE."[".T::AQUA."Size".T::YELLOW."UI".T::WHITE."]".T::GREEN."Your Size change to". T::YELLOW ." GRANDE!");
+				             $player->sendMessage(T::WHITE."[".T::AQUA."Size".T::YELLOW."UI".T::WHITE."]".T::GREEN."Your Size change to". T::YELLOW ." GRAND!");
 					break;
 					
 					case "3";
 					         $player->setScale("3.0");
-				             $player->sendMessage(T::WHITE."[".T::AQUA."Size".T::YELLOW."UI".T::WHITE."]".T::GREEN."Your Size change to". T::AQUA ." MEGAGRANDE!");
+				             $player->sendMessage(T::WHITE."[".T::AQUA."Size".T::YELLOW."UI".T::WHITE."]".T::GREEN."Your Size change to". T::AQUA ." MEGAGRAND!");
 					break;
 					}
 					
@@ -69,7 +69,7 @@ class SizeUI extends PluginBase implements Listener{
 			$form->setContent(T::GREEN."Change your Size!:");
 			$form->addButton("Mini");
 			$form->addButton("Normal");
-			$form->addButton("Grande");
+			$form->addButton("Grand");
 			$form->addButton("MegaGrand");
 			$form->sendToPlayer($player);
 			return $form;
