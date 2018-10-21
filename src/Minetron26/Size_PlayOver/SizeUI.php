@@ -1,7 +1,7 @@
 <?php
-
+ 
 namespace Minetron26\Size_PlayOver;
-
+ 
 use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
@@ -9,7 +9,7 @@ use pocketmine\Server;
 use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
 use pocketmine\utils\TextFormat as T;
-
+ 
 class SizeUI extends PluginBase implements Listener{
 	
 	public function onEnable(){
@@ -19,7 +19,7 @@ class SizeUI extends PluginBase implements Listener{
 	public function onDisable(){
 		$this->getLogger()->info("Plugin SizeUI Desactivado!");
 	}
-
+ 
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
 		switch($command->getName()){
 			case "size":
