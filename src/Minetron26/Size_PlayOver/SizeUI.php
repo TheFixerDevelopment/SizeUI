@@ -49,7 +49,7 @@ class SizeUI extends PluginBase implements Listener{
 					
 					case "1";
 					         $player->setScale("1.0");
-				             $player->sendMessage(T::WHITE."[".T::AQUA."Size".T::YELLOW."UI".T::WHITE."]".T::GREEN.Your Size change to". T::WHITE ." NORMAL!");
+				             $player->sendMessage(T::WHITE."[".T::AQUA."Size".T::YELLOW."UI".T::WHITE."]".T::GREEN."Your Size change to". T::WHITE ." NORMAL!");
 					break;
 					
 					case "2";
